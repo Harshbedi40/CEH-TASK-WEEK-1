@@ -111,6 +111,48 @@ Flag	           Scan Type	                                Description
 * sudo nmap -sS -O -p- 192.168.1.1 ( Nmap command to run it with root privileges )
 
 
+# Week-2 
+# Task-1
+# Here are some Social Engineering ( Phishing ) terms and thier definations :
+* Phishing – A cyber attack where attackers send fraudulent emails pretending to be from a trusted source to trick users into revealing sensitive information like passwords, credit card details, or login credentials.
+
+* Spear-phishing –> A targeted form of phishing that is personalized for a specific individual, organization, or business to make the scam more convincing and increase the chances of success.
+
+* Vishing (Voice Phishing) –> Social engineering attacks conducted over the phone, where attackers pretend to be legitimate authorities (such as banks or tech support) to trick victims into providing sensitive information.
+
+* Smishing (SMS Phishing) –> A phishing attack that occurs via SMS (text messages), where attackers send fake messages containing malicious links or requests for personal information.
+
+* Quishing (QR Code Phishing) –> A newer type of phishing attack where cybercriminals use malicious QR codes to redirect users to fraudulent websites to steal credentials or infect devices.
+
+* Shoulder Surfing –> A tactic where an attacker spies on someone’s screen or keyboard (in public places like cafes or ATMs) to steal sensitive information such as passwords or PINs.
+
+* Tailgating –> A physical security breach where an unauthorized person follows an authorized individual into a restricted area without proper credentials, often relying on courtesy.
+
+* Piggybacking –> Similar to tailgating, but in this case, the unauthorized person gains access with the consent of the authorized person (e.g., an employee holding the door open for someone pretending to be a visitor).
+
+* Dumpster Diving –> A method where attackers search through discarded documents, hard drives, or electronic waste to find sensitive information that can be used for malicious purposes.
+
+* Impersonation –> An attack where a cybercriminal pretends to be a trusted person (such as a boss, IT staff, or government official) to manipulate victims into providing access or sensitive data.
+
+* Whaling –> A type of spear-phishing attack that specifically targets high-profile individuals such as CEOs, CFOs, or other executives to steal large amounts of money or confidential data.
+
+* Quid Pro Quo –> A type of attack where cybercriminals offer something valuable (e.g., free software, tech support, or rewards) in exchange for confidential information.
+
+* Baiting –> A tactic where attackers lure victims into downloading malicious files or clicking harmful links by promising something appealing, like free movies, software, or job offers.
+
+* Hoax –> False information spread with the intent of misleading people, often to create panic, manipulate behavior, or lead victims into scams.
+
+* Pretexting –> A social engineering technique where an attacker fabricates a story or scenario to gain a victim’s trust and extract sensitive information (e.g., pretending to be a bank representative asking for account details).
+
+* Honeytrap –> A form of social engineering where an attacker uses romantic or flirtatious tactics to manipulate a victim into revealing confidential information or performing actions that compromise security.
+
+# Task-4
+
+# Explain the Cyber Kill Chain Methodology.
+
+
+
+
 
 
 
