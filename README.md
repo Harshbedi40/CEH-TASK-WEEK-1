@@ -150,9 +150,244 @@ Flag	           Scan Type	                                Description
 
 # Explain the Cyber Kill Chain Methodology.
 
+* The cyber kill chain methodology is a component of intelligence-driven defense for the identification and prevention of malicious
+intrusion activities
+* It provides greater insight into attack phases, which helps security professionals to understand the adversary's tactics, techniques,
+and procedures beforehand
 
+# Steps of Cyber Kill Chain Methodology -:
 
+* Reconnaissance -> Gather data on the target to probe for weak points
+* Wepanization -> Create a deliverable malicicous payload using an exploit and a backdoor
+* Delivery -> Send weaponized bundle to the victim using email, USB, etc.
+* Exploitation -> Exploit a vulnerability by executing code on the victim's system
+* Installation -> Install malware on the target system
+* Command and Control -> Create a command and control channel to communicate and pass data back and forth
+* Action of Objective -> Perform actions to achieve intended objectives/goals
 
+# What do you understand about Mitre Attack Framework & TTPs? Explain in detail.
 
+# Mitre Attack Framework 
 
+* MITRE ATT&CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations
+* The ATT&CK knowledge base is used as a foundation for the development of specific threat models and methodologies in the
+private sector, government, and the cybersecurity product and service community
+* The 14 tactic categories within ATT&CK for Enterprise are derived from the later stages (exploit, control, maintain, and
+execute) of the seven stages of the Cyber Kill Chain
 
+* Pre Attack -> Recon , Weaponize
+* Enterprise Attack -> Deliver , Exploit , Control , Execute , Maintain
+
+# The following are the tactics in ATT&CK for Enterprise
+* Reconnaissance
+* Resource Development
+* Initial Access
+* Execution
+* Persistence
+* Privilege Escalation
+* Defense Evasion
+* Credential Access
+* Discovery
+* Lateral Movement
+* Collection
+* Command and Control
+* Exfiltration
+* Impact
+
+# MITRE ATT&CK is categorized into different matrices based on attack environments:
+
+* Enterprise Matrix: Focuses on Windows, Linux, macOS, Cloud, and Containers.
+* Mobile Matrix: Covers attack techniques on mobile platforms (Android & iOS).
+* ICS (Industrial Control Systems) Matrix: Addresses threats in industrial environments.
+
+# Tactics, Techniques, and Procedures (TTPs)
+
+The term Tactics, Techniques, and Procedures (TTPs) refers to the patterns of activities and methods associated with specific threat actors or groups of threat actors
+
+# Tactics 
+
+* "Tactics" are the guidelines thatdescribe the way an attacker performs the attack from beginning to the end
+* This guideline consists of the various tactics for information gathering to perform initial exploitation, privilege escalation, and lateral movement, and to deploy measures for persistent access to the system and other purposes
+
+# Techniques 
+
+* "Techniques" are the technical methods used by an attacker to achieve intermediate results during the attack
+* These techniques include initial exploitation, setting up and maintaining command and control channels, accessing the target infrastructure, covering the tracks of data exfiltration and others
+
+# Procedures 
+
+* "Procedures" are organizational approaches that threat actors follow to launch an attack
+* The number of actions usually differs depending on the objectives of the procedure and threat actor group
+
+# Describe the Footprinting techniques & types of footprinting along with tools used in it.
+
+Footprinting is the process of gathering information about a target system, network, or organization before launching an attack. It helps attackers and security professionals understand the target’s infrastructure, identify vulnerabilities, and plan further actions.
+
+# why footprinting is important 
+* For Hackers: Used to gather intelligence and find weaknesses to exploit.
+* For Ethical Hackers & Security Teams: Helps in penetration testing, identifying security gaps, and strengthening defenses.
+
+# Types of Footprinting 
+Footprinting is classified into two main types based on the approach used:
+
+1. Active Footprinting
+
+* Involves direct interaction with the target system to gather information.
+* Can be easily detected by security teams.
+* Example: Scanning ports using Nmap, sending ping requests.
+
+2. Passive Footprinting
+
+* Involves gathering information without directly interacting with the target.
+* Difficult to detect since it relies on publicly available data.
+* Example: Checking WHOIS records, searching social media profiles.
+
+# Footprinting Tools and Techniques 
+
+1. Search Engine Footprinting
+* Tools: Google, Bing, Shodan, Google Dorks
+* Description -> Hackers use advanced search queries (Google Dorks) to find sensitive information exposed on websites.
+* Example -> Searching for exposed admin login pages or confidential files.
+
+2. WHOIS & Domain Footprinting
+* Tools: WHOIS Lookup, ICANN, Domain Dossier
+* Description -> WHOIS lookup provides domain registration details, including:
+
+* Owner's name, email, and phone number
+* Domain creation & expiration date
+* DNS and IP address details
+
+3. DNS Footprinting
+* Tools: nslookup, dig, DNSDumpster, Fierce
+* Description -> Identifies DNS records such as A, MX, TXT, and CNAME records.
+Helps attackers understand the domain structure and potential subdomains.
+
+4. Email Footprinting
+* Tools: Email Tracker Pro, EmailHeaderAnalyzer
+* Description -> Extracts metadata from email headers, revealing IP addresses, mail servers, and routing paths.
+Helps in tracking email origins and understanding email security settings.
+
+5. Social Media & Public Records Footprinting
+* Tools: Maltego, Social Searcher, SpiderFoot
+* Description -> Hackers gather employee details, job roles, and company insights from:
+  
+* LinkedIn
+* Facebook
+* Twitter
+Example -> Searching for company executives who may be targeted for spear phishing.
+
+6. Network Footprinting
+* Tools: Nmap, Angry IP Scanner, Netcraft
+* Description -> Identifies active hosts, open ports, and running services.
+
+7. Website Footprinting
+* Tools: Wappalyzer, BuiltWith, HTTrack
+* Description -> Identifies technologies used on a website (e.g., CMS, framework, plugins).
+HTTrack allows hackers to clone entire websites for offline analysis.
+
+9. Dark Web & Underground Forums Footprinting
+* Tools: Tor Browser, Ahmia Search Engine
+* Description -> Attackers browse the dark web to find leaked databases, compromised credentials, and underground hacking discussions.
+
+# List 15 Google dorking operators along with their use
+
+# Googlke Dorking 
+Google Dorking (also known as Google Hacking) uses advanced search queries to find hidden or sensitive information that is not easily accessible through normal search. These operators help ethical hackers, penetration testers, and OSINT professionals gather data efficiently.
+
+# Here are the list of 15 Google Dork and their use -:
+
+1. site: – Search Within a Specific Website
+
+* Use: Find pages within a specific website.
+* Example -> site:example.com  
+
+2. intitle: – Find Pages with a Specific Title
+
+* Use: Search for web pages with specific words in the title.
+* Example -> intitle:"admin login"  
+
+3. allintitle: – Search for Multiple Words in the Title
+
+* Use: Finds pages that contain all the specified words in the title.
+* Example -> allintitle:"phpmyadmin login"  
+(Finds login pages for phpMyAdmin databases)
+
+4. inurl: – Find URLs with a Specific Word
+
+* Use: Searches for keywords within URLs.
+* Example -> inurl:admin  
+(Finds pages with "admin" in the URL, possibly leading to admin panels)
+
+5. allinurl: – Search for Multiple Words in URL
+
+* Use: Finds pages that contain all specified words in the URL.
+* Example -> allinurl:login.php  
+(Finds login pages that contain "login.php" in the URL)
+
+6. filetype: – Search for Specific File Types
+
+* Use: Finds specific file formats like PDF, DOC, XLS, etc.
+* Example -> filetype:pdf "financial report"  
+(Searches for financial reports in PDF format)
+
+7. ext: – Search for Specific File Extensions
+
+* Use: Similar to filetype:, but searches for file extensions.
+* Example -> ext:docx "confidential"  
+(Finds confidential Word documents)
+
+8. intext: – Search for Specific Words in the Page Content
+
+* Use: Finds pages that contain a specific word or phrase in the text.
+* Example -> intext:"SQL injection vulnerability"  
+(Finds pages discussing SQL injection vulnerabilities)
+
+9. allintext: – Search for Multiple Words in Page Content
+
+*Use: Finds pages that contain all specified words in the text.
+* Example -> allintext:"username password login"  
+(Searches for pages containing login details)
+
+10. cache: – View Google’s Cached Version of a Page
+
+* Use: Retrieves the last cached version of a webpage.
+* Example -> cache:example.com  
+(Shows Google's last saved version of example.com)
+
+11. related: – Find Similar Websites
+
+* Use: Finds sites similar to a given domain.
+* Example -> related:github.com  
+(Finds websites similar to GitHub)
+
+12. link: – Find Pages Linking to a Website (Deprecated)
+
+* Use: Used to find backlinks to a specific site. (Less effective now)
+* Example -> link:example.com  
+(Shows websites linking to example.com)
+
+13. define: – Find Definitions of Words
+* Use: Finds dictionary definitions of words.
+* Example -> define:phishing  
+(Displays the definition of "phishing")
+
+14. before: and after: – Search Within a Date Range
+* Use: Finds pages published before or after a specific date.
+* Example -> hacking tutorial before:2020  
+(Searches for hacking tutorials published before 2020)
+
+🔹 Find cyberattack reports after 2022:
+
+nginx
+Copy
+Edit
+cyber attack report after:2022  
+
+15. OR & AND – Combine Search Queries
+
+* Use: Finds results that match either or both search terms.
+* Example -> hacking OR pentesting  
+(Finds pages that contain either "hacking" or "pentesting")
+
+* Find login pages related to both admin and password:
+* intitle:admin AND intext:password  
